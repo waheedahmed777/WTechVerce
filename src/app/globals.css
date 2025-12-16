@@ -24,7 +24,7 @@
   line-height: 29px;
   margin-top: 10px;
 }
-.hero .firstVideo {
+.hero .cursor-video {
   width: 60%;
   height: 100%;
   border-radius: 15px;
@@ -34,14 +34,208 @@
 .hero .pin-heading {
   margin-top: -105;
 }
-.main cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: black;
-  pointer-events: none;
-  z-index: 9999;
+.secondsection {
+  width: 80%;
+  margin: 120px auto;
+  display: flex;
+  align-items: center;
+  gap: 80px;
+}
+
+.secondsection .top-left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.secondsection .top-left .bubble-video {
+  width: 100%;
+  max-width: 420px;
+  aspect-ratio: 1 / 1;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.secondsection .right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.secondsection .right h5 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #111;
+  max-width: 420px;
+}
+@media (max-width: 900px) {
+  .secondsection {
+    flex-direction: column;
+    gap: 40px;
+    width: 90%;
+  }
+
+  .secondsection .right h5 {
+    text-align: center;
+  }
+}
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 48px;
+    line-height: 52px;
+  }
+
+  .hero .cursor-video {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .hero h1 {
+    font-size: 36px;
+    line-height: 40px;
+  }
+}
+@media (max-width: 350px) {
+  .hero h1 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+}
+
+.blogsection {
+  width: 100%;
+  background-color: #000;
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+  padding: 120px 100px;
+}
+
+/* heading */
+.blogsection > h1 {
+  color: white;
+  font-size: 72px;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 80px;
+}
+
+/* gallery grid */
+.gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+}
+
+/* left & right columns */
+.left,
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+}
+
+/* common card styling */
+.left > div,
+.right > div {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* video styling */
+.left video,
+.right video {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 32px;
+}
+
+/* DIFFERENT HEIGHTS (masonry feel) */
+.card1 video {
+  height: 100%;
+}
+.card2 video {
+  height: 100%;
+}
+.card3 video {
+  height: 100%;
+}
+.card4 video {
+  height: 100%;
+}
+.card5 video {
+  height: 100%;
+}
+.card6 video {
+  height: 100%;
+}
+
+.card7 video {
+  height: 100%;
+}
+.card8 video {
+  height: 100%;
+}
+.card9 video {
+  height: 100%;
+}
+.card10 video {
+  height: 100%;
+}
+.card11 video {
+  height: 100%;
+}
+
+/* text */
+.left h1,
+.right h1 {
+  color: white;
+  font-size: 22px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 500;
+}
+
+.left h1 b,
+.right h1 b {
+  font-weight: 700;
+}
+
+.left p,
+.right p {
+  color: #aaa;
+  font-size: 16px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* hover effect */
+.left video,
+.right video {
+  transition: transform 0.6s ease;
+}
+
+.left video:hover,
+.right video:hover {
+  transform: scale(1.03);
+}
+
+/* responsive */
+@media (max-width: 1024px) {
+  .gallery {
+    grid-template-columns: 1fr;
+    gap: 100px;
+  }
+
+  .blogsection {
+    padding: 80px 40px;
+  }
+
+  .blogsection > h1 {
+    font-size: 48px;
+  }
+}
+
+.blogsection .gallery .right {
+  margin-top: 500px;
 }
