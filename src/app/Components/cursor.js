@@ -60,6 +60,7 @@ export default function CustomCursor() {
         gsap.to(cursor, { scale: 5, duration: 0.2 });
         gsap.to(cursorText, { opacity: 1 });
       });
+      let name = 'nexuess';
 
       el.addEventListener('mouseleave', () => {
         cursorText.textContent = '';

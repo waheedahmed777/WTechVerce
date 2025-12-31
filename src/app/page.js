@@ -1,7 +1,6 @@
 'use client';
 import { useEffect } from 'react';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
-gsap.registerPlugin(ScrollTrigger);
 
 import { gsap } from 'gsap';
 // import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -21,6 +20,31 @@ export default function Home() {
         end: 'bottom bottom',
         scrub: 4,
       },
+    });
+
+    gsap.to('.blogsection', {
+      y: '-400px',
+      duration: 0.1,
+      scrollTrigger: {
+        trigger: '.hero',
+        start: 'bottom bottom',
+        end: 'bottom bottom',
+        scrub: 4,
+      },
+    });
+
+    // Sab .new-cursor videos select karo
+    const videos = document.querySelectorAll('.new-cursor');
+
+    videos.forEach((video) => {
+      video.addEventListener('mouseenter', () => {
+        video.play();
+      });
+
+      video.addEventListener('mouseleave', () => {
+        video.pause();
+        video.currentTime = 0; // optional
+      });
     });
   }, []);
 

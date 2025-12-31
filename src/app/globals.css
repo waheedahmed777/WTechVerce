@@ -108,8 +108,13 @@
   width: 100%;
   background-color: #000;
   border-top-left-radius: 80px;
+  margin-top: 800px;
   border-top-right-radius: 80px;
-  padding: 120px 100px;
+  padding-left: 120px;
+  padding-right: 120px;
+
+  padding-top: 120px;
+  padding-bottom: 320px;
 }
 
 /* heading */
