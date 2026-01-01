@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import Header from './Components/Header';
+import Footer from './Components/Footer';
 import Customcursor from './Components/cursor';
 
 const geistSans = Geist({
@@ -24,7 +25,10 @@ export default function RootLayout({ children }) {
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Header />
         <Customcursor />
-        {children} {/* SmoothScrollWrapper wraps children in page.js */}
+
+        <main>{children}</main>
+
+        <Footer />
       </body>
     </html>
   );

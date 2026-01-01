@@ -7,6 +7,7 @@ import Animatedscg from './lottie/vision.json';
 // import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 import SmoothScrollWrapper from './Components/SmoothScrollWrapper';
 import AnimatedSVG from './Components/linesvg';
+
 import './globals.css';
 export default function Home() {
   useEffect(() => {
@@ -222,7 +223,7 @@ export default function Home() {
           <AnimatedSVG height={200} />
           <div className='firstsection'>
             <div className='a1'>
-              <h6>Websites and platforms</h6>
+              <h6>WEBSITE APPLICATIONS</h6>
             </div>
             <div className='a2'>
               <h4>
@@ -235,7 +236,7 @@ export default function Home() {
           <AnimatedSVG height={300} />
           <div className='firstsection'>
             <div className='a1'>
-              <h6>Mobile Applications</h6>
+              <h6>MOBILE APPLICATIONS</h6>
             </div>
             <div className='a2'>
               <h4>
@@ -249,7 +250,7 @@ export default function Home() {
           <AnimatedSVG height={300} />{' '}
           <div className='firstsection'>
             <div className='a1'>
-              <h6>Stratgery And Branding</h6>
+              <h6>STRATEGARY AND BRANDING</h6>
             </div>
             <div className='a2'>
               <h4>
