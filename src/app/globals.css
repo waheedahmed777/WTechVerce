@@ -4,7 +4,22 @@
   margin: 0;
   padding: 0;
 }
-
+.buttons {
+  padding: 20px 40px;
+  border-radius: 20px;
+  background-color: transparent;
+  border: 1px solid black;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 19px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+.buttons:hover {
+  background-color: #111;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 .hero {
   margin-top: 320px;
   display: block;
@@ -107,14 +122,16 @@
 .blogsection {
   width: 100%;
   background-color: #000;
+
   border-top-left-radius: 80px;
-  margin-top: 800px;
   border-top-right-radius: 80px;
+
   padding-left: 120px;
   padding-right: 120px;
-
+  margin-top: 500px;
   padding-top: 120px;
-  padding-bottom: 320px;
+  padding-bottom: 180px;
+  z-index: 1;
 }
 
 /* heading */
@@ -243,4 +260,41 @@
 
 .blogsection .gallery .right {
   margin-top: 500px;
+}
+.solutions {
+  width: 100%;
+  background-color: #ffffff;
+
+  border-top-left-radius: 80px;
+  border-top-right-radius: 80px;
+
+  padding-left: 120px;
+  padding-right: 120px;
+
+  padding-top: 120px;
+  padding-bottom: 220px;
+  z-index: 2;
+  transform: translateY(-476px);
+}
+
+.solutions h1 {
+  color: rgb(0, 0, 0);
+  font-size: 72px;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 80px;
+}
+.solutions .firstsection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.firstsection .a2 h4 {
+  font-size: 21px;
+  line-height: 25px;
+  font-weight: 400;
+}
+.firstsection .a1 h4 {
+  font-size: 10px;
+  line-height: 11px;
+  font-weight: 500;
 }
